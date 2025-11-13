@@ -22,3 +22,4 @@
 ## Notas
 - No subas `.env` ni claves privadas.
 - Si necesitas que las funciones validen autenticación más estricta, lo puedo añadir (JWT/sesiones).
+"# sistema-de-inventario"  
