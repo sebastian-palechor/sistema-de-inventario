@@ -7,7 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/
 import { Alert, AlertDescription } from './ui/alert';
 import { useAuth } from '../App';
 import { toast } from 'sonner@2.0.3';
-import { projectId } from '../utils/supabase/info';
+
 
 export function LoginPage() {
   const [email, setEmail] = useState('');
