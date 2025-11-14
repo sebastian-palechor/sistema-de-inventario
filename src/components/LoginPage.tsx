@@ -17,12 +17,12 @@ export function LoginPage() {
 
   const runDiagnostic = async () => {
     try {
-      const url = `https://${projectId}.supabase.co/functions/v1/make-server-42477fe7/diagnostic`;
+      const url = `/api/diagnostic`;
       console.log('Running diagnostic:', url);
-      
+
       const response = await fetch(url);
       const data = await response.json();
-      
+
       console.log('Diagnostic results:', data);
       toast.success(`Servidor OK - Usuarios: ${data.counts?.users || 0}, Productos: ${data.counts?.products || 0}`);
     } catch (error) {
